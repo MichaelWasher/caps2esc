@@ -1,0 +1,12 @@
+# Simple Example Systemd Service
+# Copy this file into /etc/systemd/system/caps2esc.service
+[Unit]
+Description=Configure Caps Lock to Replace Esc Key
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/caps2esc
+
+[Install]
+WantedBy=multi-user.target
+
